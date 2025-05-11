@@ -1,26 +1,19 @@
 {
   "name": "quiz-app",
   "version": "1.0.0",
-  "description": "A Next.js quiz application",
+  "description": "Quiz Application with MongoDB",
+  "main": "api/index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next build && next export",
-    "deploy": "gh-pages -d out",
-    "watch-materi": "node scripts/watch-materi.js"
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
   },
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "bootstrap": "^5.3.2",
-    "jquery": "^3.7.1",
-    "mongodb": "^6.16.0",
-    "next": "^14.1.0",
-    "popper.js": "^1.16.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "nodemon": "^3.0.1"
   }
 }
