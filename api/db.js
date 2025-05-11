@@ -30,19 +30,19 @@ async function connectToDatabase() {
     const client = await MongoClient.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      serverSelectionTimeoutMS: 10000, // Increase timeout to 10 seconds
-      connectTimeoutMS: 20000, // Increase connection timeout to 20 seconds
-      socketTimeoutMS: 45000, // Increase socket timeout to 45 seconds
+      serverSelectionTimeoutMS: 5000, // Reduce timeout to 5 seconds
+      connectTimeoutMS: 10000, // Reduce connection timeout to 10 seconds
+      socketTimeoutMS: 45000,
       ssl: true,
       tls: true,
       tlsAllowInvalidCertificates: false,
       tlsAllowInvalidHostnames: false,
       retryWrites: true,
       w: 'majority',
-      maxPoolSize: 10,
-      minPoolSize: 5,
-      maxIdleTimeMS: 60000,
-      waitQueueTimeoutMS: 10000
+      maxPoolSize: 5, // Reduce pool size for serverless
+      minPoolSize: 1,
+      maxIdleTimeMS: 30000,
+      waitQueueTimeoutMS: 5000
     });
 
     cachedClient = client;
@@ -61,11 +61,25 @@ async function connectToDatabase() {
     
     // Provide more detailed error information
     if (error.name === 'MongoServerSelectionError') {
-      throw new Error(`Failed to connect to MongoDB Atlas: ${error.message}. Please check your network access settings and connection string.`);
+      const customError = new Error('Failed to connect to MongoDB Atlas');
+      customError.statusCode = 503;
+      customError.details = 'Database service is currently unavailable. Please try again later.';
+      throw customError;
     } else if (error.name === 'MongoNetworkError') {
-      throw new Error(`Network error while connecting to MongoDB Atlas: ${error.message}. Please check your internet connection and MongoDB Atlas status.`);
+      const customError = new Error('Network error while connecting to MongoDB Atlas');
+      customError.statusCode = 503;
+      customError.details = 'Network connectivity issue. Please check your internet connection.';
+      throw customError;
+    } else if (error.name === 'MongoParseError') {
+      const customError = new Error('Invalid MongoDB connection string');
+      customError.statusCode = 500;
+      customError.details = 'The database connection string is invalid. Please check your configuration.';
+      throw customError;
     } else {
-      throw error;
+      const customError = new Error('Database connection error');
+      customError.statusCode = 500;
+      customError.details = error.message;
+      throw customError;
     }
   }
 }
