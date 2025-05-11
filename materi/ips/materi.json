@@ -1,0 +1,56 @@
+{
+    "materi": [
+        {
+            "judul": "Geografi Indonesia",
+            "konten": {
+                "letak_geografis": {
+                    "posisi": "Di antara Benua Asia dan Australia",
+                    "batas": {
+                        "utara": "Laut China Selatan",
+                        "selatan": "Samudra Hindia",
+                        "barat": "Samudra Hindia",
+                        "timur": "Samudra Pasifik"
+                    }
+                },
+                "kondisi_alam": {
+                    "iklim": "Tropis",
+                    "musim": ["Musim Hujan", "Musim Kemarau"],
+                    "bentang_alam": ["Pegunungan", "Dataran Rendah", "Pantai"]
+                }
+            }
+        },
+        {
+            "judul": "Sejarah Indonesia",
+            "konten": {
+                "zaman_praaksara": {
+                    "paleolitikum": "Zaman batu tua",
+                    "mesolitikum": "Zaman batu tengah",
+                    "neolitikum": "Zaman batu muda"
+                },
+                "kerajaan_hindu_buddha": {
+                    "sriwijaya": "Kerajaan maritim",
+                    "majapahit": "Kerajaan terbesar"
+                },
+                "kerajaan_islam": {
+                    "samudra_pasai": "Kerajaan Islam pertama",
+                    "demak": "Kerajaan Islam di Jawa"
+                }
+            }
+        },
+        {
+            "judul": "Ekonomi",
+            "konten": {
+                "kegiatan_ekonomi": {
+                    "produksi": "Kegiatan menghasilkan barang",
+                    "distribusi": "Kegiatan menyalurkan barang",
+                    "konsumsi": "Kegiatan menggunakan barang"
+                },
+                "sistem_ekonomi": {
+                    "tradisional": "Sistem ekonomi sederhana",
+                    "pasar": "Sistem ekonomi liberal",
+                    "komando": "Sistem ekonomi terpusat"
+                }
+            }
+        }
+    ]
+} 

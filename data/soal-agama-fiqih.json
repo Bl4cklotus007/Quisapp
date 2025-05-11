@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Apa yang dimaksud dengan fiqih Islam?",
+      "options": [
+        "Hanya ilmu tentang ibadah",
+        "Ilmu yang mempelajari hukum-hukum syariat Islam yang bersifat praktis",
+        "Hanya ilmu tentang muamalah",
+        "Hanya ilmu tentang akhlak"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa sumber hukum utama dalam Islam?",
+      "options": [
+        "Hadits",
+        "Al-Quran",
+        "Ijma",
+        "Qiyas"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan hadits?",
+      "options": [
+        "Hanya perkataan Nabi",
+        "Perkataan, perbuatan, dan ketetapan Nabi Muhammad SAW",
+        "Hanya perbuatan Nabi",
+        "Hanya ketetapan Nabi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan ijma?",
+      "options": [
+        "Hanya kesepakatan ulama",
+        "Kesepakatan para ulama mujtahid dalam menentukan hukum syariat",
+        "Hanya pendapat ulama",
+        "Hanya fatwa ulama"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan qiyas?",
+      "options": [
+        "Hanya analogi hukum",
+        "Menyamakan hukum suatu masalah dengan masalah lain karena adanya persamaan illat (sebab)",
+        "Hanya meniru hukum",
+        "Hanya mengikuti hukum"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan hukum wajib?",
+      "options": [
+        "Hanya perintah yang harus dikerjakan",
+        "Perintah yang harus dikerjakan, jika dikerjakan mendapat pahala, jika ditinggalkan mendapat dosa",
+        "Hanya perintah yang dianjurkan",
+        "Hanya perintah yang boleh dikerjakan"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Contoh hukum wajib adalah...",
+      "options": [
+        "Hanya shalat lima waktu",
+        "Shalat lima waktu, puasa Ramadhan, zakat, haji bagi yang mampu, dan berbakti kepada orang tua",
+        "Hanya puasa Ramadhan",
+        "Hanya zakat"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan hukum sunnah?",
+      "options": [
+        "Hanya perintah yang dianjurkan",
+        "Perintah yang dianjurkan untuk dikerjakan, jika dikerjakan mendapat pahala, jika ditinggalkan tidak mendapat dosa",
+        "Hanya perintah yang boleh dikerjakan",
+        "Hanya perintah yang tidak wajib"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Contoh hukum sunnah adalah...",
+      "options": [
+        "Hanya shalat sunnah",
+        "Shalat sunnah, puasa sunnah, bersedekah, silaturahmi, dan berdoa",
+        "Hanya puasa sunnah",
+        "Hanya bersedekah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan hukum haram?",
+      "options": [
+        "Hanya larangan yang harus ditinggalkan",
+        "Larangan yang harus ditinggalkan, jika ditinggalkan mendapat pahala, jika dikerjakan mendapat dosa",
+        "Hanya larangan yang dianjurkan",
+        "Hanya larangan yang boleh dikerjakan"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+} 

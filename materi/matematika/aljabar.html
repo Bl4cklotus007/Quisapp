@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aljabar - Materi matematika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .materi-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .materi-section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .materi-section h2 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .materi-section h3 {
+            color: var(--primary);
+            margin: 20px 0 15px;
+            font-size: 1.4rem;
+        }
+
+        .materi-section p {
+            color: var(--text-dark);
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .materi-section ul {
+            list-style-type: none;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .materi-section ul li {
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .materi-section ul li:before {
+            content: "•";
+            color: var(--primary);
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .contoh-box {
+            background: rgba(79, 70, 229, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .contoh-box h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .contoh-box p {
+            color: var(--text-dark);
+            font-style: italic;
+            line-height: 1.8;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .quiz-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .back-button:hover, .quiz-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .materi-container {
+                padding: 10px;
+            }
+
+            .materi-section {
+                padding: 20px;
+            }
+
+            .materi-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .materi-section h3 {
+                font-size: 1.2rem;
+            }
+
+            .button-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .back-button, .quiz-button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="index.html" class="back-button">← Kembali ke Daftar Materi</a>
+        <a href="../../soal/matematika/soal.html" class="quiz-button">Mulai Quiz</a>
+    </div>
+    
+    <div class="materi-container">
+        <h3>Judul</h3><p>Aljabar</p><h3>Deskripsi</h3><p>Materi tentang persamaan, pertidaksamaan, dan fungsi</p><h3>Konten</h3><h3>Pengertian</h3><p>Aljabar adalah cabang matematika yang mempelajari struktur dan relasi</p><h3>Materi</h3><ul><li>Persamaan Linear</li><li>Pertidaksamaan</li><li>Fungsi Linear</li><li>Sistem Persamaan</li></ul><h3>Rumus</h3><ul><li>ax + b = 0</li><li>ax + b > 0</li><li>f(x) = ax + b</li></ul>
+    </div>
+</body>
+</html>

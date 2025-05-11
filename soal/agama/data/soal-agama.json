@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Apa nama kitab suci umat Islam?",
+      "options": ["Al-Quran", "Alkitab", "Taurat", "Zabur"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Berapa jumlah rukun Islam?",
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Siapakah nabi terakhir dalam Islam?",
+      "options": ["Nabi Ibrahim", "Nabi Musa", "Nabi Isa", "Nabi Muhammad"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Apa nama ibadah puasa di bulan Ramadhan?",
+      "options": ["Puasa Sunnah", "Puasa Wajib", "Puasa Nafsu", "Puasa Ramadhan"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berapa jumlah malaikat yang wajib diketahui?",
+      "options": ["8", "9", "10", "11"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Apa nama ibadah haji yang dilakukan di luar bulan haji?",
+      "options": ["Haji Ifrad", "Haji Qiran", "Haji Tamattu", "Umrah"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Siapakah malaikat yang bertugas meniup sangkakala?",
+      "options": ["Malaikat Jibril", "Malaikat Israfil", "Malaikat Mikail", "Malaikat Izrail"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa nama ibadah shalat yang dilakukan pada hari raya?",
+      "options": ["Shalat Jumat", "Shalat Tarawih", "Shalat Id", "Shalat Tahajud"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Berapa jumlah rakaat shalat Subuh?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Apa nama ibadah zakat yang wajib dikeluarkan setiap tahun?",
+      "options": ["Zakat Fitrah", "Zakat Mal", "Zakat Profesi", "Zakat Perdagangan"],
+      "correctAnswer": 1
+    }
+  ]
+} 

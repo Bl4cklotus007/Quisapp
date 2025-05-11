@@ -1,0 +1,75 @@
+{
+    "materi": [
+        {
+            "judul": "Bilangan Bulat",
+            "konten": {
+                "operasi_dasar": {
+                    "penjumlahan": {
+                        "rumus": "a + b = c",
+                        "contoh": "5 + 3 = 8"
+                    },
+                    "pengurangan": {
+                        "rumus": "a - b = c",
+                        "contoh": "5 - 3 = 2"
+                    },
+                    "perkalian": {
+                        "rumus": "a × b = c",
+                        "contoh": "5 × 3 = 15"
+                    },
+                    "pembagian": {
+                        "rumus": "a ÷ b = c",
+                        "contoh": "15 ÷ 3 = 5"
+                    }
+                },
+                "sifat_operasi": {
+                    "komutatif": "a + b = b + a",
+                    "asosiatif": "(a + b) + c = a + (b + c)",
+                    "distributif": "a × (b + c) = (a × b) + (a × c)"
+                }
+            }
+        },
+        {
+            "judul": "Aljabar",
+            "konten": {
+                "bentuk_aljabar": {
+                    "suku_tunggal": "2x, 3y, 4z",
+                    "suku_banyak": "2x + 3y, x² + 2x + 1"
+                },
+                "operasi_aljabar": {
+                    "penjumlahan": "(2x + 3) + (x + 2) = 3x + 5",
+                    "pengurangan": "(2x + 3) - (x + 2) = x + 1",
+                    "perkalian": "(2x + 3)(x + 2) = 2x² + 7x + 6"
+                }
+            }
+        },
+        {
+            "judul": "Geometri",
+            "konten": {
+                "bangun_datar": {
+                    "persegi": {
+                        "luas": "s × s",
+                        "keliling": "4 × s"
+                    },
+                    "persegi_panjang": {
+                        "luas": "p × l",
+                        "keliling": "2(p + l)"
+                    },
+                    "segitiga": {
+                        "luas": "1/2 × a × t",
+                        "keliling": "a + b + c"
+                    }
+                },
+                "bangun_ruang": {
+                    "kubus": {
+                        "volume": "s × s × s",
+                        "luas_permukaan": "6 × s × s"
+                    },
+                    "balok": {
+                        "volume": "p × l × t",
+                        "luas_permukaan": "2(pl + pt + lt)"
+                    }
+                }
+            }
+        }
+    ]
+} 

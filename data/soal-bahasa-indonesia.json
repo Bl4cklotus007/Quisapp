@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Apa yang dimaksud dengan teks eksposisi?",
+      "options": [
+        "Teks yang berisi pendapat penulis tentang suatu hal",
+        "Teks yang menceritakan pengalaman pribadi",
+        "Teks yang berisi dialog antar tokoh",
+        "Teks yang berisi puisi dan pantun"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Berikut ini yang termasuk ciri-ciri teks eksposisi adalah...",
+      "options": [
+        "Menggunakan bahasa yang emosional",
+        "Berisi fakta dan data yang mendukung",
+        "Menggunakan dialog antar tokoh",
+        "Berisi cerita fiksi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan kata baku?",
+      "options": [
+        "Kata yang sering digunakan dalam percakapan sehari-hari",
+        "Kata yang sesuai dengan kaidah bahasa Indonesia yang benar",
+        "Kata yang berasal dari bahasa daerah",
+        "Kata yang digunakan dalam bahasa gaul"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berikut ini yang termasuk kata baku adalah...",
+      "options": [
+        "ngapain, gimana, bener",
+        "apakah, bagaimana, benar",
+        "nggak, gak, beneran",
+        "emang, sih, dong"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan puisi?",
+      "options": [
+        "Karya sastra yang berbentuk prosa",
+        "Karya sastra yang berbentuk dialog",
+        "Karya sastra yang berbentuk sajak",
+        "Karya sastra yang berbentuk cerita"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Berikut ini yang termasuk unsur-unsur puisi adalah...",
+      "options": [
+        "Dialog, monolog, dan solilokui",
+        "Diksi, rima, dan majas",
+        "Tokoh, latar, dan alur",
+        "Tema, amanat, dan sudut pandang"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan cerpen?",
+      "options": [
+        "Cerita yang panjang dan terdiri dari beberapa bab",
+        "Cerita pendek yang selesai dibaca dalam sekali duduk",
+        "Cerita yang berisi dialog antar tokoh",
+        "Cerita yang berisi puisi dan pantun"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berikut ini yang termasuk unsur intrinsik cerpen adalah...",
+      "options": [
+        "Diksi, rima, dan majas",
+        "Tokoh, latar, dan alur",
+        "Fakta, opini, dan data",
+        "Dialog, monolog, dan solilokui"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan pantun?",
+      "options": [
+        "Puisi yang terdiri dari empat baris",
+        "Puisi yang terdiri dari dua baris",
+        "Puisi yang terdiri dari enam baris",
+        "Puisi yang terdiri dari delapan baris"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Berikut ini yang termasuk ciri-ciri pantun adalah...",
+      "options": [
+        "Setiap baris terdiri dari 8-12 suku kata",
+        "Setiap baris terdiri dari 4-6 suku kata",
+        "Setiap baris terdiri dari 12-14 suku kata",
+        "Setiap baris terdiri dari 6-8 suku kata"
+      ],
+      "correctAnswer": 0
+    }
+  ]
+} 

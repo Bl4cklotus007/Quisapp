@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Apa yang dimaksud dengan sejarah Islam?",
+      "options": [
+        "Hanya sejarah Nabi Muhammad",
+        "Catatan perjalanan umat Islam dari masa ke masa, mulai dari kelahiran Nabi Muhammad SAW hingga perkembangan Islam di berbagai belahan dunia",
+        "Hanya sejarah para sahabat",
+        "Hanya sejarah para khalifah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berapa lama periode kenabian di Mekah?",
+      "options": [
+        "8 tahun",
+        "12 tahun",
+        "10 tahun",
+        "15 tahun"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Peristiwa penting apa yang terjadi pada periode Mekah?",
+      "options": [
+        "Hanya turunnya wahyu pertama",
+        "Turunnya wahyu pertama, dakwah sembunyi-sembunyi, dakwah terang-terangan, penganiayaan, Isra' Mi'raj, Bai'at Aqabah, dan hijrah",
+        "Hanya hijrah",
+        "Hanya Isra' Mi'raj"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berapa lama periode kenabian di Madinah?",
+      "options": [
+        "8 tahun",
+        "10 tahun",
+        "12 tahun",
+        "15 tahun"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Peristiwa penting apa yang terjadi pada periode Madinah?",
+      "options": [
+        "Hanya pembangunan Masjid Nabawi",
+        "Pembangunan Masjid Nabawi, Piagam Madinah, Perang Badar, Perang Uhud, Perang Khandaq, Perjanjian Hudaibiyah, Fathu Mekah, dan Haji Wada'",
+        "Hanya Perang Badar",
+        "Hanya Fathu Mekah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Siapa khalifah pertama setelah Nabi Muhammad SAW?",
+      "options": [
+        "Umar bin Khattab",
+        "Abu Bakar Ash-Shiddiq",
+        "Utsman bin Affan",
+        "Ali bin Abi Thalib"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa prestasi Khalifah Umar bin Khattab?",
+      "options": [
+        "Hanya memperluas wilayah",
+        "Memperluas wilayah Islam, mendirikan Baitul Mal, membuat sistem administrasi, dan mendirikan kota-kota baru",
+        "Hanya mendirikan Baitul Mal",
+        "Hanya membuat sistem administrasi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa prestasi Khalifah Utsman bin Affan?",
+      "options": [
+        "Hanya membukukan Al-Quran",
+        "Membukukan Al-Quran, membangun angkatan laut, memperluas Masjid Nabawi, dan mengembangkan sistem pendidikan",
+        "Hanya membangun angkatan laut",
+        "Hanya memperluas Masjid Nabawi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Kapan masa keemasan Islam terjadi?",
+      "options": [
+        "Masa Khulafaur Rasyidin",
+        "Masa Dinasti Abbasiyah",
+        "Masa Dinasti Umayyah",
+        "Masa Kesultanan Ottoman"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa prestasi Kesultanan Ottoman?",
+      "options": [
+        "Hanya perluasan wilayah",
+        "Pusat pemerintahan di Istanbul, perluasan wilayah ke Eropa, kemajuan dalam bidang militer, dan kemajuan dalam bidang arsitektur",
+        "Hanya kemajuan militer",
+        "Hanya kemajuan arsitektur"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+} 

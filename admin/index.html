@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .question-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .questions-list {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .question-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .question-item:last-child {
+            border-bottom: none;
+        }
+
+        .question-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .btn-edit,
+        .btn-delete {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-edit {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-delete {
+            background: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1>Admin Panel</h1>
+            <button class="btn" onclick="showAddQuestionForm()">Tambah Soal</button>
+        </div>
+
+        <div id="question-form" class="question-form" style="display: none;">
+            <h2>Tambah Soal Baru</h2>
+            <form id="add-question-form">
+                <div class="form-group">
+                    <label for="subject">Mata Pelajaran</label>
+                    <select id="subject" required>
+                        <option value="agama">Agama</option>
+                        <option value="matematika">Matematika</option>
+                        <option value="ipa">IPA</option>
+                        <option value="bahasa-indonesia">Bahasa Indonesia</option>
+                        <option value="bahasa-inggris">Bahasa Inggris</option>
+                        <option value="ips">IPS</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Kategori</label>
+                    <input type="text" id="category" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="question">Pertanyaan</label>
+                    <textarea id="question" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="option1">Pilihan 1</label>
+                    <input type="text" id="option1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="option2">Pilihan 2</label>
+                    <input type="text" id="option2" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="option3">Pilihan 3</label>
+                    <input type="text" id="option3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="option4">Pilihan 4</label>
+                    <input type="text" id="option4" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="answer">Jawaban Benar</label>
+                    <select id="answer" required>
+                        <option value="0">Pilihan 1</option>
+                        <option value="1">Pilihan 2</option>
+                        <option value="2">Pilihan 3</option>
+                        <option value="3">Pilihan 4</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Simpan</button>
+                <button type="button" class="btn" onclick="hideAddQuestionForm()">Batal</button>
+            </form>
+        </div>
+
+        <div class="questions-list">
+            <h2>Daftar Soal</h2>
+            <div id="questions-container">
+                <!-- Questions will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Show/hide add question form
+        function showAddQuestionForm() {
+            document.getElementById('question-form').style.display = 'block';
+        }
+
+        function hideAddQuestionForm() {
+            document.getElementById('question-form').style.display = 'none';
+        }
+
+        // Load questions
+        async function loadQuestions() {
+            try {
+                const response = await fetch('/api/questions');
+                const questions = await response.json();
+                displayQuestions(questions);
+            } catch (error) {
+                console.error('Error loading questions:', error);
+            }
+        }
+
+        // Display questions
+        function displayQuestions(questions) {
+            const container = document.getElementById('questions-container');
+            container.innerHTML = questions.map(question => `
+                <div class="question-item">
+                    <h3>${question.pertanyaan}</h3>
+                    <p>Mata Pelajaran: ${question.subject}</p>
+                    <p>Kategori: ${question.category}</p>
+                    <div class="question-actions">
+                        <button class="btn-edit" onclick="editQuestion('${question._id}')">Edit</button>
+                        <button class="btn-delete" onclick="deleteQuestion('${question._id}')">Hapus</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Add new question
+        document.getElementById('add-question-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const newQuestion = {
+                subject: document.getElementById('subject').value,
+                category: document.getElementById('category').value,
+                pertanyaan: document.getElementById('question').value,
+                pilihan: [
+                    document.getElementById('option1').value,
+                    document.getElementById('option2').value,
+                    document.getElementById('option3').value,
+                    document.getElementById('option4').value
+                ],
+                jawaban: parseInt(document.getElementById('answer').value)
+            };
+
+            try {
+                const response = await fetch('/api/questions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(newQuestion)
+                });
+
+                if (response.ok) {
+                    hideAddQuestionForm();
+                    loadQuestions();
+                    document.getElementById('add-question-form').reset();
+                }
+            } catch (error) {
+                console.error('Error adding question:', error);
+            }
+        });
+
+        // Delete question
+        async function deleteQuestion(id) {
+            if (confirm('Apakah Anda yakin ingin menghapus soal ini?')) {
+                try {
+                    const response = await fetch(`/api/questions?id=${id}`, {
+                        method: 'DELETE'
+                    });
+
+                    if (response.ok) {
+                        loadQuestions();
+                    }
+                } catch (error) {
+                    console.error('Error deleting question:', error);
+                }
+            }
+        }
+
+        // Edit question
+        async function editQuestion(id) {
+            // Implement edit functionality
+        }
+
+        // Load questions when page loads
+        loadQuestions();
+    </script>
+</body>
+</html> 

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Matematika - Quiz App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    .quiz-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .quiz-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin: 0;
+    }
+
+    .quiz-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+
+    .info-item i {
+      color: var(--primary);
+    }
+
+    .question-container {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .question-number {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.2rem;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .options-container {
+      display: grid;
+      gap: 15px;
+    }
+
+    .option {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .option:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .option.selected {
+      border-color: var(--primary);
+      background: rgba(79, 70, 229, 0.1);
+    }
+
+    .option.correct {
+      border-color: #10B981;
+      background: rgba(16, 185, 129, 0.1);
+    }
+
+    .option.wrong {
+      border-color: #EF4444;
+      background: rgba(239, 68, 68, 0.1);
+    }
+
+    .option-letter {
+      width: 30px;
+      height: 30px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .option-text {
+      flex: 1;
+      color: var(--text-dark);
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .btn-prev {
+      background: white;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-next {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .progress-container {
+      margin-bottom: 30px;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .timer {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .quiz-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
+      .quiz-info {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .question-container {
+        padding: 20px;
+      }
+
+      .question-text {
+        font-size: 1.1rem;
+      }
+
+      .option {
+        padding: 12px 15px;
+      }
+
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <h1 class="quiz-title">Quiz Matematika</h1>
+      <div class="quiz-info">
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <span class="timer" id="timer">20:00</span>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-question-circle"></i>
+          <span>Soal <span id="current-question">1</span>/<span id="total-questions">10</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="question-container">
+      <div class="question-number">Soal <span id="question-number">1</span></div>
+      <div class="question-text" id="question-text">Loading...</div>
+      <div class="options-container" id="options-container">
+        <!-- Options will be inserted here -->
+      </div>
+    </div>
+
+    <div class="navigation-buttons">
+      <button class="btn btn-prev" id="prev-btn" disabled>Sebelumnya</button>
+      <button class="btn btn-next" id="next-btn">Selanjutnya</button>
+    </div>
+    <script>
+      let questions = [];
+      let currentQuestion = 0;
+      let score = 0;
+      let timeLeft = 1200; // 20 minutes in seconds
+      let timer;
+      let userAnswers = []; // Array untuk menyimpan jawaban user
+
+      // DOM Elements
+      const questionText = document.getElementById('question-text');
+      const optionsContainer = document.getElementById('options-container');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const progressBar = document.getElementById('progress-bar');
+      const currentQuestionSpan = document.getElementById('current-question');
+      const totalQuestionsSpan = document.getElementById('total-questions');
+      const timerDisplay = document.getElementById('timer');
+
+      // Fetch questions from JSON file
+      async function fetchQuestions() {
+        try {
+          const response = await fetch('../../data/soal-matematika.json');
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          const data = await response.json();
+          questions = data.questions;
+          initQuiz();
+        } catch (error) {
+          console.error('Error loading questions:', error);
+          questionText.textContent = 'Error loading questions. Please try again later.';
+        }
+      }
+
+      // Initialize quiz
+      function initQuiz() {
+        totalQuestionsSpan.textContent = questions.length;
+        showQuestion();
+        startTimer();
+      }
+
+      // Show current question
+      function showQuestion() {
+        const question = questions[currentQuestion];
+        questionText.textContent = question.question;
+        currentQuestionSpan.textContent = currentQuestion + 1;
+
+        // Update progress bar
+        const progress = ((currentQuestion + 1) / questions.length) * 100;
+        progressBar.style.width = `${progress}%`;
+
+        // Clear previous options
+        optionsContainer.innerHTML = '';
+
+        // Add new options
+        question.options.forEach((option, index) => {
+          const optionElement = document.createElement('div');
+          optionElement.className = 'option';
+          optionElement.innerHTML = `
+          <div class="option-letter">${String.fromCharCode(65 + index)}</div>
+          <div class="option-text">${option}</div>
+        `;
+          optionElement.addEventListener('click', () => selectOption(index));
+          optionsContainer.appendChild(optionElement);
+        });
+
+        // Update navigation buttons
+        prevBtn.disabled = currentQuestion === 0;
+        nextBtn.textContent = currentQuestion === questions.length - 1 ? 'Selesai' : 'Selanjutnya';
+      }
+
+      // Handle option selection
+      function selectOption(optionIndex) {
+        const options = document.querySelectorAll('.option');
+        options.forEach(option => option.classList.remove('selected'));
+        options[optionIndex].classList.add('selected');
+
+        // Simpan jawaban user
+        userAnswers[currentQuestion] = optionIndex;
+      }
+
+      // Navigation functions
+      prevBtn.addEventListener('click', () => {
+        if (currentQuestion > 0) {
+          currentQuestion--;
+          showQuestion();
+          // Tampilkan jawaban yang sudah dipilih sebelumnya
+          if (userAnswers[currentQuestion] !== undefined) {
+            const options = document.querySelectorAll('.option');
+            options[userAnswers[currentQuestion]].classList.add('selected');
+          }
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentQuestion < questions.length - 1) {
+          currentQuestion++;
+          showQuestion();
+          // Tampilkan jawaban yang sudah dipilih sebelumnya
+          if (userAnswers[currentQuestion] !== undefined) {
+            const options = document.querySelectorAll('.option');
+            options[userAnswers[currentQuestion]].classList.add('selected');
+          }
+        } else {
+          endQuiz();
+        }
+      });
+
+      // Timer function
+      function startTimer() {
+        timer = setInterval(() => {
+          timeLeft--;
+          const minutes = Math.floor(timeLeft / 60);
+          const seconds = timeLeft % 60;
+          timerDisplay.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+          if (timeLeft <= 0) {
+            endQuiz();
+          }
+        }, 1000);
+      }
+
+      // End quiz function
+      function endQuiz() {
+        clearInterval(timer);
+        
+        // Hitung skor akhir
+        score = 0;
+        for (let i = 0; i < questions.length; i++) {
+          if (userAnswers[i] === questions[i].correctAnswer) {
+            score++;
+          }
+        }
+        
+        localStorage.setItem('matematikaScore', score);
+        localStorage.setItem('matematikaTotalQuestions', questions.length);
+        window.location.href = 'skor.html';
+      }
+
+      // Start the quiz by fetching questions
+      fetchQuestions();
+    </script>
+</body>
+
+</html>

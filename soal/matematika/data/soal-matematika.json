@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Hasil dari 25 + (-15) adalah...",
+            "options": [
+                "40",
+                "10",
+                "-10",
+                "-40"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Hasil dari 8 × (-4) adalah...",
+            "options": [
+                "32",
+                "-32",
+                "12",
+                "-12"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Hasil dari (2x + 3) + (x + 2) adalah...",
+            "options": [
+                "3x + 5",
+                "2x + 5",
+                "3x + 6",
+                "2x + 6"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Hasil dari (2x + 3)(x + 2) adalah...",
+            "options": [
+                "2x² + 7x + 6",
+                "2x² + 5x + 6",
+                "2x² + 7x + 5",
+                "2x² + 5x + 5"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Luas persegi dengan panjang sisi 5 cm adalah...",
+            "options": [
+                "20 cm²",
+                "25 cm²",
+                "30 cm²",
+                "35 cm²"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Keliling persegi panjang dengan panjang 6 cm dan lebar 4 cm adalah...",
+            "options": [
+                "20 cm",
+                "24 cm",
+                "28 cm",
+                "32 cm"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Volume kubus dengan panjang rusuk 3 cm adalah...",
+            "options": [
+                "9 cm³",
+                "18 cm³",
+                "27 cm³",
+                "36 cm³"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Luas permukaan balok dengan panjang 4 cm, lebar 3 cm, dan tinggi 2 cm adalah...",
+            "options": [
+                "24 cm²",
+                "36 cm²",
+                "48 cm²",
+                "52 cm²"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "Hasil dari 36 ÷ (-6) adalah...",
+            "options": [
+                "6",
+                "-6",
+                "42",
+                "-42"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Luas segitiga dengan alas 6 cm dan tinggi 4 cm adalah...",
+            "options": [
+                "12 cm²",
+                "24 cm²",
+                "36 cm²",
+                "48 cm²"
+            ],
+            "correctAnswer": 0
+        }
+    ]
+} 

@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "question": "Apa nama kitab suci umat Islam?",
+      "options": ["Al-Quran", "Alkitab", "Taurat", "Zabur"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Berapa jumlah rukun Islam?",
+      "options": ["4", "5", "6", "7"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Siapakah nabi terakhir dalam Islam?",
+      "options": ["Nabi Ibrahim", "Nabi Musa", "Nabi Isa", "Nabi Muhammad"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Apa nama ibadah puasa di bulan Ramadhan?",
+      "options": ["Puasa Sunnah", "Puasa Wajib", "Puasa Nafsu", "Puasa Ramadhan"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berapa jumlah malaikat yang wajib diketahui?",
+      "options": ["8", "9", "10", "11"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Apa nama ibadah haji yang dilakukan di luar bulan haji?",
+      "options": ["Haji Ifrad", "Haji Qiran", "Haji Tamattu", "Umrah"],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Siapakah malaikat yang bertugas meniup sangkakala?",
+      "options": ["Malaikat Jibril", "Malaikat Israfil", "Malaikat Mikail", "Malaikat Izrail"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa nama ibadah shalat yang dilakukan pada hari raya?",
+      "options": ["Shalat Jumat", "Shalat Tarawih", "Shalat Id", "Shalat Tahajud"],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Berapa jumlah rakaat shalat Subuh?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Apa nama ibadah zakat yang wajib dikeluarkan setiap tahun?",
+      "options": ["Zakat Fitrah", "Zakat Mal", "Zakat Profesi", "Zakat Perdagangan"],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berikut ini yang termasuk rukun iman adalah...",
+      "options": [
+        "Shalat, puasa, zakat, haji, dan syahadat",
+        "Iman kepada Allah, malaikat, kitab, rasul, hari akhir, dan qada qadar",
+        "Jujur, amanah, dan istiqomah",
+        "Tauhid, syirik, dan kufur"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berikut ini yang termasuk rukun islam adalah...",
+      "options": [
+        "Iman kepada Allah, malaikat, kitab, rasul, hari akhir, dan qada qadar",
+        "Shalat, puasa, zakat, haji, dan syahadat",
+        "Jujur, amanah, dan istiqomah",
+        "Tauhid, syirik, dan kufur"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan akhlak?",
+      "options": [
+        "Perbuatan yang dilakukan secara sengaja",
+        "Perbuatan yang dilakukan secara tidak sengaja",
+        "Perbuatan yang dilakukan secara terpaksa",
+        "Perbuatan yang dilakukan secara spontan"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Berikut ini yang termasuk akhlak terpuji adalah...",
+      "options": [
+        "Dusta, khianat, dan sombong",
+        "Jujur, amanah, dan rendah hati",
+        "Riya, ujub, dan takabur",
+        "Hasad, ghibah, dan fitnah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Siapakah Nabi Muhammad SAW?",
+      "options": [
+        "Nabi pertama yang diutus Allah",
+        "Nabi terakhir yang diutus Allah",
+        "Nabi yang diutus untuk Bani Israil",
+        "Nabi yang diutus untuk kaum 'Ad"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Kapan Nabi Muhammad SAW dilahirkan?",
+      "options": [
+        "Tahun Gajah (571 M)",
+        "Tahun Kelahiran (570 M)",
+        "Tahun Kematian (632 M)",
+        "Tahun Hijriyah (622 M)"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Apa yang dimaksud dengan tauhid?",
+      "options": [
+        "Mengakui adanya Tuhan selain Allah",
+        "Mengakui keesaan Allah",
+        "Mengakui adanya sekutu bagi Allah",
+        "Mengakui adanya perantara antara manusia dan Allah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berikut ini yang termasuk syirik adalah...",
+      "options": [
+        "Berdoa kepada Allah",
+        "Berdoa kepada selain Allah",
+        "Berdoa dengan mengangkat tangan",
+        "Berdoa dengan suara keras"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan hijrah?",
+      "options": [
+        "Perpindahan Nabi Muhammad SAW dari Mekah ke Madinah",
+        "Perpindahan Nabi Muhammad SAW dari Madinah ke Mekah",
+        "Perpindahan Nabi Muhammad SAW dari Mekah ke Thaif",
+        "Perpindahan Nabi Muhammad SAW dari Madinah ke Thaif"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Kapan terjadinya peristiwa hijrah?",
+      "options": [
+        "Tahun 570 M",
+        "Tahun 571 M",
+        "Tahun 622 M",
+        "Tahun 632 M"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+} 

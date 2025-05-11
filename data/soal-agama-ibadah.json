@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Berapakah jumlah rukun Islam?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan syahadat?",
+      "options": [
+        "Hanya mengucapkan dua kalimat syahadat",
+        "Pernyataan kesaksian bahwa tidak ada Tuhan selain Allah dan Muhammad adalah utusan Allah",
+        "Hanya mengakui keesaan Allah",
+        "Hanya mengakui kerasulan Muhammad"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Berapa rakaat shalat Subuh?",
+      "options": [
+        "3 rakaat",
+        "2 rakaat",
+        "4 rakaat",
+        "5 rakaat"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan zakat?",
+      "options": [
+        "Hanya sedekah biasa",
+        "Kewajiban mengeluarkan sebagian harta untuk membersihkan harta dan membantu sesama",
+        "Hanya membantu fakir miskin",
+        "Hanya membersihkan harta"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Kapan waktu puasa Ramadhan?",
+      "options": [
+        "Dari terbit matahari hingga terbenam matahari",
+        "Dari terbit fajar hingga terbenam matahari",
+        "Dari tengah malam hingga terbenam matahari",
+        "Dari terbit fajar hingga tengah malam"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan ibadah haji?",
+      "options": [
+        "Hanya berkunjung ke Mekah",
+        "Berkunjung ke Baitullah di Mekah untuk melaksanakan rangkaian ibadah haji pada waktu tertentu",
+        "Hanya melakukan tawaf",
+        "Hanya melakukan sa'i"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan ibadah mahdhah?",
+      "options": [
+        "Semua jenis ibadah",
+        "Ibadah murni yang tata caranya sudah ditentukan secara langsung oleh Allah dan Rasul-Nya",
+        "Hanya ibadah wajib",
+        "Hanya ibadah sunnah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Contoh ibadah ghairu mahdhah adalah...",
+      "options": [
+        "Shalat",
+        "Puasa",
+        "Belajar",
+        "Zakat"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Apa tujuan utama ibadah dalam Islam?",
+      "options": [
+        "Hanya untuk mendapatkan pahala",
+        "Mendekatkan diri kepada Allah SWT",
+        "Hanya untuk menghindari dosa",
+        "Hanya untuk mendapatkan surga"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Mengapa ibadah penting dalam kehidupan seorang muslim?",
+      "options": [
+        "Hanya sebagai kewajiban",
+        "Hanya untuk mendapatkan pahala",
+        "Sebagai bentuk penghambaan dan mendekatkan diri kepada Allah SWT",
+        "Hanya untuk menghindari dosa"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+} 

@@ -1,0 +1,54 @@
+{
+  "questions": [
+  {
+    "question": "Apa ibu kota negara Indonesia?",
+    "options": ["Surabaya", "Medan", "Jakarta", "Bandung"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "2 + 2 = ?",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Siapa presiden pertama Indonesia?",
+    "options": ["Soeharto", "Jokowi", "Habibie", "Soekarno"],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Apa nama kitab suci agama Islam?",
+    "options": ["Alkitab", "Taurat", "Al-Qur'an", "Injil"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Apa hasil dari 15 × 3?",
+    "options": ["30", "45", "60", "35"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Planet terdekat dengan Matahari adalah?",
+    "options": ["Venus", "Mars", "Merkurius", "Bumi"],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Bahasa resmi negara Indonesia adalah?",
+    "options": ["Jawa", "Indonesia", "Sunda", "Melayu"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Siapa penemu gaya gravitasi?",
+    "options": ["Albert Einstein", "Isaac Newton", "Galileo", "Tesla"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Apa singkatan dari IPS?",
+    "options": ["Ilmu Pengetahuan Sosial", "Ilmu Politik dan Sosial", "Ilmu Pengantar Sosial", "Ilmu Publik dan Sosial"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "What is the English word for 'air'?",
+    "options": ["Water", "Wind", "Air", "Soil"],
+    "correctAnswer": 2
+  }
+]
+}

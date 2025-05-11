@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Quiz - Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .score-container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .score-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .score-circle-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(var(--primary) 0%, var(--secondary) 100%);
+            animation: rotate 2s linear infinite;
+        }
+
+        .score-circle-inner {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .score-value {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .score-message {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .score-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+        }
+
+        .detail-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .detail-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .detail-value {
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .btn-retry {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-home {
+            background: white;
+            color: var(--primary);
+            padding: 15px 30px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            border: 2px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .btn-retry:hover, .btn-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .score-container {
+                padding: 20px;
+            }
+
+            .score-circle {
+                width: 150px;
+                height: 150px;
+            }
+
+            .score-value {
+                font-size: 2.5rem;
+            }
+
+            .score-message {
+                font-size: 1.2rem;
+            }
+
+            .score-details {
+                grid-template-columns: 1fr;
+            }
+
+            .action-buttons {
+                flex-direction: column;
+            }
+
+            .btn-retry, .btn-home {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="score-container">
+            <div class="score-circle">
+                <div class="score-circle-bg"></div>
+                <div class="score-circle-inner">
+                    <div class="score-value" id="score">0</div>
+                </div>
+            </div>
+            
+            <h2 class="score-message" id="message">Loading...</h2>
+            
+            <div class="score-details">
+                <div class="detail-item">
+                    <div class="detail-label">Total Soal</div>
+                    <div class="detail-value" id="total-questions">0</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Jawaban Benar</div>
+                    <div class="detail-value" id="correct-answers">0</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Jawaban Salah</div>
+                    <div class="detail-value" id="wrong-answers">0</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Persentase</div>
+                    <div class="detail-value" id="percentage">0%</div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <a href="soal.html" class="btn-retry">Coba Lagi</a>
+                <a href="../../quiz-selection.html" class="btn-home">Kembali ke Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get score from localStorage
+        const score = localStorage.getItem('agamaScore') || 0;
+        const totalQuestions = localStorage.getItem('agamaTotalQuestions') || 0;
+        const wrongAnswers = totalQuestions - score;
+        const percentage = Math.round((score / totalQuestions) * 100);
+
+        // Update score display
+        document.getElementById('score').textContent = score;
+        document.getElementById('total-questions').textContent = totalQuestions;
+        document.getElementById('correct-answers').textContent = score;
+        document.getElementById('wrong-answers').textContent = wrongAnswers;
+        document.getElementById('percentage').textContent = percentage + '%';
+
+        // Set message based on score
+        let message = '';
+        if (percentage >= 80) {
+            message = 'Sangat Bagus! 🎉';
+        } else if (percentage >= 60) {
+            message = 'Bagus! 👍';
+        } else if (percentage >= 40) {
+            message = 'Cukup Baik! 💪';
+        } else {
+            message = 'Tetap Semangat! 🌟';
+        }
+        document.getElementById('message').textContent = message;
+
+        // Clear localStorage
+        localStorage.removeItem('agamaScore');
+        localStorage.removeItem('agamaTotalQuestions');
+    </script>
+</body>
+</html> 

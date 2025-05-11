@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Berapakah hasil dari 2x + 3x?",
+            "options": [
+                "5x",
+                "6x",
+                "5x²",
+                "6x²"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Berapakah hasil dari (x + 2)(x + 3)?",
+            "options": [
+                "x² + 5x + 6",
+                "x² + 6x + 5",
+                "x² + 5x + 5",
+                "x² + 6x + 6"
+            ],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Berapakah nilai x dari persamaan 2x + 5 = 13?",
+            "options": [
+                "x = 3",
+                "x = 4",
+                "x = 5",
+                "x = 6"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Berapakah hasil dari √16?",
+            "options": [
+                "2",
+                "4",
+                "8",
+                "16"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Berapakah hasil dari 2³?",
+            "options": [
+                "4",
+                "6",
+                "8",
+                "16"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Berapakah jumlah sudut dalam segitiga?",
+            "options": [
+                "90°",
+                "180°",
+                "270°",
+                "360°"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Berapakah luas persegi dengan sisi 5 cm?",
+            "options": [
+                "20 cm²",
+                "25 cm²",
+                "30 cm²",
+                "35 cm²"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Berapakah volume kubus dengan rusuk 3 cm?",
+            "options": [
+                "9 cm³",
+                "18 cm³",
+                "27 cm³",
+                "36 cm³"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Berapakah keliling lingkaran dengan jari-jari 7 cm? (π = 22/7)",
+            "options": [
+                "22 cm",
+                "44 cm",
+                "66 cm",
+                "88 cm"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Berapakah luas lingkaran dengan jari-jari 7 cm? (π = 22/7)",
+            "options": [
+                "77 cm²",
+                "154 cm²",
+                "231 cm²",
+                "308 cm²"
+            ],
+            "correctAnswer": 1
+        }
+    ]
+} 

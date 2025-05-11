@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Berapakah jumlah rukun iman dalam Islam?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Apa yang dimaksud dengan iman kepada Allah SWT?",
+      "options": [
+        "Hanya percaya bahwa Allah ada",
+        "Keyakinan bahwa Allah adalah satu-satunya Tuhan yang berhak disembah",
+        "Hanya mengakui Allah sebagai pencipta",
+        "Hanya percaya pada kekuasaan Allah"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Siapa malaikat yang bertugas menyampaikan wahyu?",
+      "options": [
+        "Malaikat Mikail",
+        "Malaikat Jibril",
+        "Malaikat Israfil",
+        "Malaikat Izrail"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Kitab suci apa yang diturunkan kepada Nabi Musa AS?",
+      "options": [
+        "Al-Quran",
+        "Injil",
+        "Taurat",
+        "Zabur"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Siapa yang disebut sebagai bapak para nabi?",
+      "options": [
+        "Nabi Adam AS",
+        "Nabi Nuh AS",
+        "Nabi Ibrahim AS",
+        "Nabi Muhammad SAW"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Apa yang dimaksud dengan iman kepada hari akhir?",
+      "options": [
+        "Hanya percaya pada kematian",
+        "Keyakinan bahwa kehidupan dunia akan berakhir dan manusia akan dibangkitkan",
+        "Hanya percaya pada hari kiamat",
+        "Hanya percaya pada surga dan neraka"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan qada dan qadar?",
+      "options": [
+        "Hanya ketetapan Allah yang sudah terjadi",
+        "Hanya ketetapan Allah yang akan terjadi",
+        "Ketetapan Allah yang sudah dan akan terjadi",
+        "Hanya takdir yang tidak dapat diubah"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Sifat wajib Allah yang berarti 'ada' adalah...",
+      "options": [
+        "Qidam",
+        "Wujud",
+        "Baqa",
+        "Mukhalafatu lil hawadits"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Sifat mustahil Allah yang berarti 'tidak ada' adalah...",
+      "options": [
+        "Adam",
+        "Huduts",
+        "Fana",
+        "Mumatsalatu lil hawadits"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Mengapa akidah Islam penting dalam kehidupan seorang muslim?",
+      "options": [
+        "Hanya sebagai landasan ibadah",
+        "Hanya untuk menentukan keselamatan di akhirat",
+        "Sebagai landasan utama dalam Islam dan menentukan keselamatan di akhirat",
+        "Hanya untuk membentuk kepribadian muslim"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+} 

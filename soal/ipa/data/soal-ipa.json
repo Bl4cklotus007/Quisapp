@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Enzim yang berfungsi mencerna karbohidrat di mulut adalah...",
+            "options": [
+                "Pepsin",
+                "Amilase",
+                "Lipase",
+                "Tripsin"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Organ yang berfungsi menyerap nutrisi makanan adalah...",
+            "options": [
+                "Lambung",
+                "Usus Besar",
+                "Usus Halus",
+                "Kerongkongan"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Tempat terjadinya pertukaran gas oksigen dan karbon dioksida adalah...",
+            "options": [
+                "Bronkus",
+                "Alveolus",
+                "Trakea",
+                "Diafragma"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Proses menghirup udara disebut...",
+            "options": [
+                "Ekspirasi",
+                "Inspirasi",
+                "Respirasi",
+                "Asimilasi"
+            ],
+            "corrsctAwswer": 1
+        },
+        {
+            "question": "Komponen darah yang berfungsi mengangkut oksigen adalah...",
+            "options": [
+                "Sel Darah Putih",
+                "Sel Darah Merah",
+                "Trombosit",
+                "Plasma"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Bagian jantung yang berfungsi memompa darah ke seluruh tubuh adalah...",
+            "options": [
+                "Serambi Kiri",
+                "Serambi Kanan",
+                "Bilik Kiri",
+                "Bilik Kanan"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Pembuluh darah yang membawa darah dari jantung adalah...",
+            "options": [
+                "Vena",
+                "Arteri",
+                "Kapiler",
+                "Aorta"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Komponen darah yang berfungsi dalam sistem kekebalan tubuh adalah...",
+            "options": [
+                "Sel Darah Merah",
+                "Sel Darah Putih",
+                "Trombosit",
+                "Plasma"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Proses pencernaan yang terjadi di mulut adalah...",
+            "options": [
+                "Kimiawi",
+                "Mekanik",
+                "Kimiawi dan Mekanik",
+                "Tidak ada pencernaan"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Organ yang berfungsi menyaring udara yang masuk adalah...",
+            "options": [
+                "Mulut",
+                "Hidung",
+                "Tenggorokan",
+                "Paru-paru"
+            ],
+            "correctAnswer": 1
+        }
+    ]
+} 

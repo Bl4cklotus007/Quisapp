@@ -1,0 +1,461 @@
+{
+  "materi": {
+    "bahasa-indonesia": {
+      "teks-eksposisi": {
+        "judul": "Teks Eksposisi",
+        "konten": {
+          "pengertian": "Teks eksposisi adalah teks yang berisi penjelasan atau pemaparan tentang suatu topik dengan tujuan memberikan informasi atau pengetahuan kepada pembaca.",
+          "struktur": [
+            {
+              "nama": "Tesis",
+              "penjelasan": "Bagian awal yang berisi pernyataan pendapat atau pandangan penulis terhadap masalah yang dibahas."
+            },
+            {
+              "nama": "Argumentasi",
+              "penjelasan": "Bagian yang berisi alasan atau bukti yang mendukung tesis. Biasanya terdiri dari beberapa paragraf."
+            },
+            {
+              "nama": "Penegasan Ulang",
+              "penjelasan": "Bagian akhir yang berisi penegasan kembali pendapat penulis terhadap masalah yang dibahas."
+            }
+          ],
+          "ciri-ciri": {
+            "kebahasaan": [
+              "Menggunakan kata ganti",
+              "Menggunakan kata penghubung",
+              "Menggunakan kata teknis",
+              "Menggunakan kata persuasif"
+            ],
+            "isi": [
+              "Bersifat informatif",
+              "Menggunakan fakta",
+              "Menggunakan data",
+              "Menggunakan contoh"
+            ]
+          },
+          "jenis": [
+            "Eksposisi Definisi",
+            "Eksposisi Proses",
+            "Eksposisi Klasifikasi",
+            "Eksposisi Perbandingan",
+            "Eksposisi Ilustrasi"
+          ],
+          "langkah-menulis": [
+            "Menentukan topik",
+            "Mengumpulkan data",
+            "Menyusun kerangka",
+            "Mengembangkan kerangka",
+            "Menyunting teks"
+          ],
+          "contoh": {
+            "tesis": "Pendidikan karakter sangat penting untuk membentuk kepribadian siswa.",
+            "argumentasi": "Pendidikan karakter membantu siswa memahami nilai-nilai moral, mengembangkan sikap positif, dan membentuk kepribadian yang baik.",
+            "penegasan": "Oleh karena itu, pendidikan karakter harus diterapkan di setiap jenjang pendidikan."
+          }
+        }
+      },
+      "tata-bahasa": {
+        "judul": "Tata Indonesia",
+        "konten": {
+          "pengertian": "Tata bahasa adalah aturan-aturan yang mengatur penggunaan bahasa dalam komunikasi.",
+          "kelas-kata": {
+            "kata-benda": {
+              "nama": "Kata Benda (Nomina)",
+              "jenis": [
+                {
+                  "nama": "Kata Benda Konkret",
+                  "contoh": ["meja", "kursi", "buku"]
+                },
+                {
+                  "nama": "Kata Benda Abstrak",
+                  "contoh": ["kebahagiaan", "kesedihan", "kejujuran"]
+                },
+                {
+                  "nama": "Kata Benda Kolektif",
+                  "contoh": ["rombongan", "kelompok", "tim"]
+                }
+              ]
+            },
+            "kata-kerja": {
+              "nama": "Kata Kerja (Verba)",
+              "jenis": [
+                {
+                  "nama": "Verba Transitif",
+                  "contoh": ["membaca", "menulis", "membeli"]
+                },
+                {
+                  "nama": "Verba Intransitif",
+                  "contoh": ["tidur", "duduk", "berdiri"]
+                },
+                {
+                  "nama": "Verba Aktif",
+                  "contoh": ["me-", "ber-", "ter-"]
+                },
+                {
+                  "nama": "Verba Pasif",
+                  "contoh": ["di-", "ter-"]
+                }
+              ]
+            },
+            "kata-sifat": {
+              "nama": "Kata Sifat (Adjektiva)",
+              "jenis": [
+                {
+                  "nama": "Adjektiva Dasar",
+                  "contoh": ["baik", "cantik", "tinggi"]
+                },
+                {
+                  "nama": "Adjektiva Turunan",
+                  "contoh": ["terbaik", "tercantik", "tertinggi"]
+                },
+                {
+                  "nama": "Adjektiva Majemuk",
+                  "contoh": ["baik hati", "tinggi besar"]
+                }
+              ]
+            }
+          },
+          "kalimat": {
+            "tunggal": {
+              "nama": "Kalimat Tunggal",
+              "contoh": [
+                "Saya membaca buku.",
+                "Ani menulis surat."
+              ]
+            },
+            "majemuk": {
+              "nama": "Kalimat Majemuk",
+              "contoh": [
+                "Saya membaca buku dan Ani menulis surat.",
+                "Saya akan pergi jika hujan berhenti."
+              ]
+            }
+          },
+          "frasa": {
+            "nominal": {
+              "nama": "Frasa Nominal",
+              "contoh": [
+                "buku baru",
+                "rumah besar"
+              ]
+            },
+            "verbal": {
+              "nama": "Frasa Verbal",
+              "contoh": [
+                "sedang membaca",
+                "akan pergi"
+              ]
+            }
+          },
+          "kata-hubung": {
+            "nama": "Kata Hubung (Konjungsi)",
+            "jenis": [
+              {
+                "nama": "Konjungsi Koordinatif",
+                "contoh": ["dan", "atau", "tetapi"]
+              },
+              {
+                "nama": "Konjungsi Subordinatif",
+                "contoh": ["karena", "jika", "ketika"]
+              },
+              {
+                "nama": "Konjungsi Korelatif",
+                "contoh": ["baik...maupun", "tidak hanya...tetapi juga"]
+              }
+            ]
+          },
+          "kata-depan": {
+            "nama": "Kata Depan (Preposisi)",
+            "contoh": [
+              {
+                "kata": "di",
+                "penggunaan": ["di rumah", "di sekolah"]
+              },
+              {
+                "kata": "ke",
+                "penggunaan": ["ke pasar", "ke sekolah"]
+              },
+              {
+                "kata": "dari",
+                "penggunaan": ["dari rumah", "dari sekolah"]
+              },
+              {
+                "kata": "pada",
+                "penggunaan": ["pada hari ini", "pada waktu itu"]
+              }
+            ]
+          },
+          "kata-ganti": {
+            "nama": "Kata Ganti (Pronomina)",
+            "jenis": [
+              {
+                "nama": "Pronomina Persona",
+                "contoh": ["saya", "kamu", "dia"]
+              },
+              {
+                "nama": "Pronomina Penunjuk",
+                "contoh": ["ini", "itu"]
+              },
+              {
+                "nama": "Pronomina Penanya",
+                "contoh": ["apa", "siapa", "mana"]
+              },
+              {
+                "nama": "Pronomina Relatif",
+                "contoh": ["yang"]
+              }
+            ]
+          },
+          "kata-bilangan": {
+            "nama": "Kata Bilangan (Numeralia)",
+            "jenis": [
+              {
+                "nama": "Numeralia Utama",
+                "contoh": ["satu", "dua", "tiga"]
+              },
+              {
+                "nama": "Numeralia Tingkat",
+                "contoh": ["pertama", "kedua", "ketiga"]
+              },
+              {
+                "nama": "Numeralia Kolektif",
+                "contoh": ["kedua", "ketiga", "keempat"]
+              },
+              {
+                "nama": "Numeralia Pecahan",
+                "contoh": ["setengah", "sepertiga", "seperempat"]
+              }
+            ]
+          }
+        }
+      },
+      "puisi": {
+        "judul": "Puisi",
+        "konten": {
+          "pengertian": "Puisi adalah bentuk karya sastra yang menggunakan bahasa yang indah dan penuh makna.",
+          "unsur": {
+            "batin": [
+              "Tema",
+              "Perasaan",
+              "Nada",
+              "Amanat"
+            ],
+            "fisik": [
+              "Diksi",
+              "Imaji",
+              "Kata Konkret",
+              "Gaya Bahasa",
+              "Rima"
+            ]
+          },
+          "jenis": [
+            "Puisi Lama",
+            "Puisi Baru",
+            "Puisi Kontemporer"
+          ],
+          "contoh": {
+            "judul": "Aku",
+            "pengarang": "Chairil Anwar",
+            "bait": "Kalau sampai waktuku\n'Ku mau tak seorang 'kan merayu\nTidak juga kau\nTak perlu sedu sedan itu"
+          }
+        }
+      },
+      "cerpen": {
+        "judul": "Cerita Pendek",
+        "konten": {
+          "pengertian": "Cerita pendek adalah karya sastra yang menceritakan suatu peristiwa dalam kehidupan tokoh secara singkat.",
+          "unsur": {
+            "intrinsik": [
+              "Tema",
+              "Alur",
+              "Tokoh",
+              "Latar",
+              "Sudut Pandang",
+              "Amanat"
+            ],
+            "ekstrinsik": [
+              "Latar Belakang Pengarang",
+              "Kondisi Masyarakat",
+              "Nilai-nilai dalam Cerita"
+            ]
+          },
+          "ciri-ciri": [
+            "Singkat dan padat",
+            "Fokus pada satu peristiwa",
+            "Tokoh terbatas",
+            "Alur sederhana",
+            "Selesai dalam sekali baca"
+          ],
+          "struktur": [
+            "Abstrak",
+            "Orientasi",
+            "Komplikasi",
+            "Evaluasi",
+            "Resolusi",
+            "Koda"
+          ]
+        }
+      },
+      "pantun": {
+        "judul": "Pantun",
+        "konten": {
+          "pengertian": "Pantun adalah puisi lama yang terdiri dari empat baris dengan pola a-b-a-b.",
+          "ciri-ciri": [
+            "Setiap bait terdiri dari 4 baris",
+            "Baris 1-2 adalah sampiran",
+            "Baris 3-4 adalah isi",
+            "Bersajak a-b-a-b",
+            "Setiap baris terdiri dari 8-12 suku kata"
+          ],
+          "jenis": [
+            "Pantun Anak-anak",
+            "Pantun Muda-mudi",
+            "Pantun Orang Tua",
+            "Pantun Jenaka",
+            "Pantun Teka-teki"
+          ],
+          "contoh": {
+            "sampiran": "Pohon manggis di tepi rawa\nTempat nenek tidur beradu",
+            "isi": "Sedang menangis si kakek tua\nMendengar burung bernyanyi riang"
+          }
+        }
+      }
+    },
+    "bahasa-inggris": {
+      "grammar": {
+        "judul": "Grammar",
+        "deskripsi": "Materi tentang tata bahasa Inggris termasuk tenses dan parts of speech",
+        "konten": {
+          "pengertian": "Grammar adalah aturan-aturan yang mengatur struktur dan penggunaan bahasa Inggris",
+          "tenses": [
+            "Simple Present: Subject + V1/V1+s/es",
+            "Present Continuous: Subject + am/is/are + V-ing",
+            "Simple Past: Subject + V2",
+            "Past Continuous: Subject + was/were + V-ing"
+          ],
+          "parts-of-speech": [
+            "Noun (Kata Benda)",
+            "Verb (Kata Kerja)",
+            "Adjective (Kata Sifat)",
+            "Adverb (Kata Keterangan)"
+          ]
+        }
+      },
+      "vocabulary": {
+        "judul": "Vocabulary",
+        "deskripsi": "Kumpulan kata-kata dalam bahasa Inggris yang perlu dipahami",
+        "konten": {
+          "pengertian": "Vocabulary adalah kumpulan kata-kata dalam bahasa Inggris",
+          "kategori": [
+            "Daily Activities (Kegiatan Sehari-hari)",
+            "Food and Drinks (Makanan dan Minuman)",
+            "Transportation (Transportasi)",
+            "Family (Keluarga)"
+          ]
+        }
+      }
+    },
+    "ips": {
+      "sejarah-indonesia": {
+        "judul": "Sejarah Indonesia",
+        "deskripsi": "Materi tentang perjalanan sejarah Indonesia dari masa prasejarah hingga kemerdekaan",
+        "konten": {
+          "pengertian": "Sejarah Indonesia adalah perjalanan panjang bangsa Indonesia",
+          "periode": [
+            "Masa Prasejarah",
+            "Masa Hindu-Buddha",
+            "Masa Islam",
+            "Masa Kolonial",
+            "Masa Kemerdekaan"
+          ],
+          "kerajaan": [
+            "Sriwijaya",
+            "Majapahit",
+            "Demak",
+            "Mataram"
+          ]
+        }
+      },
+      "geografi": {
+        "judul": "Geografi",
+        "deskripsi": "Materi tentang bumi dan fenomena yang terjadi di dalamnya",
+        "konten": {
+          "pengertian": "Geografi adalah ilmu yang mempelajari tentang bumi",
+          "aspek": [
+            "Aspek Fisik (Iklim, Cuaca, Bentang Alam)",
+            "Aspek Sosial (Penduduk, Budaya, Ekonomi)"
+          ],
+          "wilayah": [
+            "Asia Tenggara",
+            "Indonesia",
+            "Benua Asia",
+            "Benua Australia"
+          ]
+        }
+      },
+      "ekonomi": {
+        "judul": "Ekonomi",
+        "deskripsi": "Materi tentang konsep dasar ekonomi dan sistem ekonomi",
+        "konten": {
+          "pengertian": "Ekonomi adalah ilmu yang mempelajari tentang cara manusia memenuhi kebutuhan hidupnya dengan sumber daya yang terbatas",
+          "konsep-dasar": [
+            "Kelangkaan (Scarcity)",
+            "Kebutuhan dan Keinginan",
+            "Biaya Peluang (Opportunity Cost)",
+            "Produksi dan Konsumsi"
+          ],
+          "sistem-ekonomi": [
+            "Sistem Ekonomi Tradisional",
+            "Sistem Ekonomi Komando",
+            "Sistem Ekonomi Pasar",
+            "Sistem Ekonomi Campuran"
+          ],
+          "kegiatan-ekonomi": [
+            "Produksi: Kegiatan menghasilkan barang dan jasa",
+            "Distribusi: Kegiatan menyalurkan barang dari produsen ke konsumen",
+            "Konsumsi: Kegiatan menggunakan barang dan jasa"
+          ]
+        }
+      }
+    },
+    "matematika": {
+      "aljabar": {
+        "judul": "Aljabar",
+        "deskripsi": "Materi tentang persamaan, pertidaksamaan, dan fungsi",
+        "konten": {
+          "pengertian": "Aljabar adalah cabang matematika yang mempelajari struktur dan relasi",
+          "materi": [
+            "Persamaan Linear",
+            "Pertidaksamaan",
+            "Fungsi Linear",
+            "Sistem Persamaan"
+          ],
+          "rumus": [
+            "ax + b = 0",
+            "ax + b > 0",
+            "f(x) = ax + b"
+          ]
+        }
+      },
+      "geometri": {
+        "judul": "Geometri",
+        "deskripsi": "Materi tentang bangun datar dan bangun ruang",
+        "konten": {
+          "pengertian": "Geometri adalah cabang matematika yang mempelajari bentuk dan ukuran",
+          "bangun-datar": [
+            "Segitiga",
+            "Persegi",
+            "Persegi Panjang",
+            "Lingkaran"
+          ],
+          "bangun-ruang": [
+            "Kubus",
+            "Balok",
+            "Tabung",
+            "Kerucut"
+          ]
+        }
+      }
+    }
+  }
+}

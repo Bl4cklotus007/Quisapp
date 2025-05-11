@@ -1,0 +1,17 @@
+[
+  {
+    "username": "siswa1",
+    "password": "123456",
+    "role": "siswa"
+  },
+  {
+    "username": "siswa2",
+    "password": "123456",
+    "role": "siswa"
+  },
+  {
+    "username": "siswa3",
+    "password": "123456",
+    "role": "siswa"
+  }
+]

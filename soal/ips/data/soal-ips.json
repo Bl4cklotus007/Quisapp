@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Indonesia terletak di antara dua benua, yaitu...",
+            "options": [
+                "Asia dan Eropa",
+                "Asia dan Australia",
+                "Australia dan Afrika",
+                "Amerika dan Asia"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Batas sebelah utara Indonesia adalah...",
+            "options": [
+                "Samudra Hindia",
+                "Samudra Pasifik",
+                "Laut China Selatan",
+                "Laut Jawa"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Zaman batu tua disebut juga...",
+            "options": [
+                "Mesolitikum",
+                "Neolitikum",
+                "Paleolitikum",
+                "Megalitikum"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Kerajaan Hindu-Buddha terbesar di Indonesia adalah...",
+            "options": [
+                "Sriwijaya",
+                "Majapahit",
+                "Kutai",
+                "Tarumanegara"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Kerajaan Islam pertama di Indonesia adalah...",
+            "options": [
+                "Demak",
+                "Samudra Pasai",
+                "Mataram",
+                "Banten"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Kegiatan menghasilkan barang disebut...",
+            "options": [
+                "Distribusi",
+                "Konsumsi",
+                "Produksi",
+                "Konsumsi"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Sistem ekonomi yang mengandalkan mekanisme pasar disebut...",
+            "options": [
+                "Sistem Ekonomi Tradisional",
+                "Sistem Ekonomi Pasar",
+                "Sistem Ekonomi Komando",
+                "Sistem Ekonomi Campuran"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Iklim di Indonesia adalah...",
+            "options": [
+                "Subtropis",
+                "Tropis",
+                "Sedang",
+                "Dingin"
+            ],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Kegiatan menyalurkan barang dari produsen ke konsumen disebut...",
+            "options": [
+                "Produksi",
+                "Distribusi",
+                "Konsumsi",
+                "Konsumsi"
+            ],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Bentang alam yang tidak terdapat di Indonesia adalah...",
+            "options": [
+                "Pegunungan",
+                "Dataran Rendah",
+                "Pantai",
+                "Gurun"
+            ],
+            "correctAnswer": 3
+        }
+    ]
+} 

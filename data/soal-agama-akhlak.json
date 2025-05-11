@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "Apa yang dimaksud dengan akhlak Islam?",
+      "options": [
+        "Hanya perilaku baik kepada manusia",
+        "Perilaku atau budi pekerti yang didasarkan pada nilai-nilai Islam",
+        "Hanya perilaku baik kepada Allah",
+        "Hanya perilaku baik kepada lingkungan"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Contoh akhlak terpuji kepada Allah SWT adalah...",
+      "options": [
+        "Hanya beribadah",
+        "Bersyukur, bertaubat, tawakal, ikhlas, dan taqwa",
+        "Hanya berdoa",
+        "Hanya membaca Al-Quran"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Bagaimana akhlak yang baik kepada Rasulullah SAW?",
+      "options": [
+        "Hanya mengakui kerasulannya",
+        "Mencintai, mengikuti sunnahnya, memuliakan ajarannya, membaca shalawat, dan meneladani perilakunya",
+        "Hanya membaca shalawat",
+        "Hanya mengikuti sunnahnya"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa saja akhlak terpuji kepada orang tua?",
+      "options": [
+        "Hanya berbakti",
+        "Berbakti, berbicara sopan, mendoakan kebaikan, merawat di masa tua, dan menjaga nama baik keluarga",
+        "Hanya merawat di masa tua",
+        "Hanya mendoakan kebaikan"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Bagaimana akhlak yang baik kepada tetangga?",
+      "options": [
+        "Hanya tidak mengganggu",
+        "Saling menolong, menghormati, tidak mengganggu, mengunjungi, dan mendoakan",
+        "Hanya saling menolong",
+        "Hanya saling menghormati"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Contoh akhlak terpuji kepada lingkungan adalah...",
+      "options": [
+        "Hanya menjaga kebersihan",
+        "Menjaga kebersihan, tidak merusak alam, menanam pohon, menghemat air, dan membuang sampah pada tempatnya",
+        "Hanya menanam pohon",
+        "Hanya menghemat air"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Apa yang dimaksud dengan akhlak tercela?",
+      "options": [
+        "Hanya perilaku buruk",
+        "Perilaku yang harus dihindari karena bertentangan dengan nilai-nilai Islam",
+        "Hanya dosa besar",
+        "Hanya dosa kecil"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Contoh akhlak tercela adalah...",
+      "options": [
+        "Hanya dengki",
+        "Dengki, riya, sombong, dusta, ghibah, fitnah, korupsi, zina, minum khamr, dan judi",
+        "Hanya riya",
+        "Hanya sombong"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Mengapa akhlak Islam penting dalam kehidupan?",
+      "options": [
+        "Hanya untuk kehidupan sosial",
+        "Sebagai cerminan keimanan dan membentuk kepribadian muslim yang baik",
+        "Hanya untuk kehidupan dunia",
+        "Hanya untuk kehidupan akhirat"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Bagaimana cara menerapkan akhlak Islam dalam kehidupan sehari-hari?",
+      "options": [
+        "Hanya dengan beribadah",
+        "Dengan meneladani Rasulullah SAW dan menerapkan nilai-nilai Islam dalam setiap aspek kehidupan",
+        "Hanya dengan berdoa",
+        "Hanya dengan membaca Al-Quran"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

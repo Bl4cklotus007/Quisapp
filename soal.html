@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soal Quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      min-height: 100vh;
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+    .content-container {
+      background-color: #ffffffcc;
+      backdrop-filter: blur(4px);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .question {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .question-header {
+      margin-bottom: 1rem;
+    }
+    .question-number {
+      font-weight: 600;
+      color: #333;
+    }
+    .question-text {
+      font-size: 1.125rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    .answer-options {
+      margin-top: 1rem;
+    }
+    .answer-option {
+      display: block;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .answer-option:hover {
+      background: #f8f9fa;
+    }
+    .answer-option input[type="radio"] {
+      margin-right: 0.5rem;
+    }
+    .btn-submit {
+      display: block;
+      width: 180px;
+      margin: 2rem auto 0 auto;
+      font-weight: 600;
+      border-radius: 9999px;
+      background-color: #28a745;
+      border: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn-submit:hover {
+      background-color: #218838;
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="content-container">
+    <div id="question-container">
+      <!-- Soal akan ditampilkan di sini -->
+    </div>
+    <button id="submit" class="btn-submit">Selesai</button>
+  </div>
+
+  <script>
+    // Fungsi untuk mendapatkan nama file JSON yang sesuai
+    function getJsonFileName(subject) {
+      const fileMap = {
+        'agama': 'soal-agama.json',
+        'matematika': 'soal-matematika.json',
+        'ipa': 'soal-ipa.json',
+        'bahasa-indonesia': 'soal-indo.json',
+        'bahasa-inggris': 'soal-inggris.json',
+        'ips': 'soal-ips.json'
+      };
+      return fileMap[subject] || null;
+    }
+
+    // Fungsi untuk memuat soal
+    async function loadQuestions() {
+      try {
+        const subject = new URLSearchParams(window.location.search).get('subject');
+        if (!subject) {
+          throw new Error('Mata pelajaran tidak ditemukan!');
+        }
+
+        const fileName = getJsonFileName(subject);
+        if (!fileName) {
+          throw new Error(`Mata pelajaran tidak valid: ${subject}`);
+        }
+
+        const response = await fetch(`data/${fileName}`, {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+          throw new Error('Response bukan JSON yang valid');
+        }
+
+        const data = await response.json();
+        if (!Array.isArray(data) || data.length === 0) {
+          throw new Error('Data soal tidak valid atau kosong');
+        }
+
+        console.log('Loaded questions:', data); // Debug log
+        return data;
+      } catch (error) {
+        console.error('Error:', error);
+        alert(`Gagal memuat soal: ${error.message}`);
+        return null;
+      }
+    }
+
+    // Fungsi untuk menampilkan soal
+    function displayQuestions(questions) {
+      const container = document.getElementById('question-container');
+      if (!container) {
+        console.error('Question container not found!');
+        return;
+      }
+
+      container.innerHTML = '';
+      questions.forEach((q, index) => {
+        const questionElement = document.createElement('div');
+        questionElement.className = 'question';
+        questionElement.innerHTML = `
+          <div class="question-header">
+            <span class="question-number">Soal ${index + 1}</span>
+          </div>
+          <div class="question-text">${q.pertanyaan}</div>
+          <div class="answer-options">
+            ${q.pilihan.map((option, i) => `
+              <div class="answer-option">
+                <input type="radio" name="q${index}" value="${i}" id="q${index}o${i}">
+                <label for="q${index}o${i}">${option}</label>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(questionElement);
+      });
+    }
+
+    // Fungsi untuk menghitung skor
+    function calculateScore(questions, answers) {
+      let score = 0;
+      questions.forEach((q, index) => {
+        if (answers[index] === q.jawaban) {
+          score++;
+        }
+      });
+      return score;
+    }
+
+    // Event listener untuk tombol submit
+    document.getElementById('submit').addEventListener('click', () => {
+      const questions = window.questions; // Menggunakan variabel global
+      if (!questions) {
+        alert('Soal belum dimuat!');
+        return;
+      }
+
+      const answers = [];
+      questions.forEach((_, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        answers.push(selected ? parseInt(selected.value) : -1);
+      });
+
+      const score = calculateScore(questions, answers);
+      localStorage.setItem('quizScore', score);
+      localStorage.setItem('totalQuestions', questions.length);
+      window.location.href = `skor.html?subject=${new URLSearchParams(window.location.search).get('subject')}`;
+    });
+
+    // Load questions when page loads
+    window.onload = async () => {
+      const questions = await loadQuestions();
+      if (questions) {
+        window.questions = questions; // Menyimpan soal di variabel global
+        displayQuestions(questions);
+      }
+    };
+  </script>
+</body>
+</html> 

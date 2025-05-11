@@ -1,0 +1,64 @@
+{
+    "materi": [
+        {
+            "judul": "Sistem Pencernaan",
+            "konten": {
+                "organ_pencernaan": {
+                    "mulut": {
+                        "fungsi": "Mengunyah makanan",
+                        "enzim": "Amilase"
+                    },
+                    "lambung": {
+                        "fungsi": "Mencerna protein",
+                        "enzim": "Pepsin"
+                    },
+                    "usus": {
+                        "usus_halus": "Penyerapan nutrisi",
+                        "usus_besar": "Penyerapan air"
+                    }
+                },
+                "proses_pencernaan": {
+                    "mekanik": "Pengunyahan dan pergerakan",
+                    "kimiawi": "Pencernaan oleh enzim"
+                }
+            }
+        },
+        {
+            "judul": "Sistem Pernapasan",
+            "konten": {
+                "organ_pernapasan": {
+                    "hidung": "Penyaringan udara",
+                    "tenggorokan": "Saluran udara",
+                    "paru_paru": {
+                        "bronkus": "Cabang saluran udara",
+                        "alveolus": "Pertukaran gas"
+                    }
+                },
+                "proses_pernapasan": {
+                    "inspirasi": "Menghirup udara",
+                    "ekspirasi": "Menghembuskan udara"
+                }
+            }
+        },
+        {
+            "judul": "Sistem Peredaran Darah",
+            "konten": {
+                "komponen_darah": {
+                    "sel_merah": "Mengangkut oksigen",
+                    "sel_putih": "Sistem kekebalan",
+                    "trombosit": "Pembekuan darah",
+                    "plasma": "Cairan darah"
+                },
+                "jantung": {
+                    "serambi": "Menerima darah",
+                    "bilik": "Memompa darah"
+                },
+                "pembuluh_darah": {
+                    "arteri": "Membawa darah dari jantung",
+                    "vena": "Membawa darah ke jantung",
+                    "kapiler": "Pertukaran zat"
+                }
+            }
+        }
+    ]
+} 

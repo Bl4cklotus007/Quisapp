@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "question": "apakah form of Simple Present Tense for 'He (go) to school'?",
+      "options": [
+        "He go to school",
+        "He goes to school",
+        "He going to school",
+        "He went to school"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the correct form of Present Continuous Tense for 'They (play) football'?",
+      "options": [
+        "They play football",
+        "They plays football",
+        "They are playing football",
+        "They played football"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the past form of 'write'?",
+      "options": [
+        "writed",
+        "wrote",
+        "written",
+        "writing"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Choose the correct article: '___ apple is ___ fruit'",
+      "options": [
+        "A, a",
+        "An, a",
+        "The, the",
+        "An, an"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the plural form of 'child'?",
+      "options": [
+        "childs",
+        "children",
+        "childrens",
+        "childes"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "What is the synonym of 'happy'?",
+      "options": [
+        "Sad",
+        "Angry",
+        "Joyful",
+        "Tired"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "What is the antonym of 'big'?",
+      "options": [
+        "Large",
+        "Huge",
+        "Small",
+        "Tall"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Which word is a verb in the sentence: 'The cat sleeps on the mat'?",
+      "options": [
+        "cat",
+        "sleeps",
+        "on",
+        "mat"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "How do you form a question from: 'She likes ice cream'?",
+      "options": [
+        "She does like ice cream?",
+        "Does she likes ice cream?",
+        "Does she like ice cream?",
+        "She like ice cream?"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Choose the correct preposition: 'The book is ___ the table'",
+      "options": [
+        "in",
+        "at",
+        "on",
+        "by"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+} 
