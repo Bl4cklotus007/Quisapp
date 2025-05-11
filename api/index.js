@@ -1,20 +1,43 @@
 const express = require('express');
-const router = express.Router();
+const cors = require('cors');
 const materiController = require('./materi');
 const soalController = require('./soal');
 
+const app = express();
+
+// CORS configuration
+const corsOptions = {
+  origin: '*', // Allow all origins for now, we can restrict later
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+app.use(express.json());
+
 // Materi routes
-router.get('/materi', materiController.getAllMateri);
-router.get('/materi/:subject', materiController.getMateriBySubject);
-router.post('/materi', materiController.addMateri);
-router.put('/materi/:id', materiController.updateMateri);
-router.delete('/materi/:id', materiController.deleteMateri);
+app.get('/api/materi', materiController.getAllMateri);
+app.get('/api/materi/:subject', materiController.getMateriBySubject);
+app.post('/api/materi', materiController.addMateri);
+app.put('/api/materi/:id', materiController.updateMateri);
+app.delete('/api/materi/:id', materiController.deleteMateri);
 
 // Soal routes
-router.get('/soal', soalController.getAllQuestions);
-router.get('/soal/:subject', soalController.getQuestionsBySubject);
-router.post('/soal', soalController.addQuestion);
-router.put('/soal/:id', soalController.updateQuestion);
-router.delete('/soal/:id', soalController.deleteQuestion);
+app.get('/api/soal', soalController.getAllQuestions);
+app.get('/api/soal/:subject', soalController.getQuestionsBySubject);
+app.post('/api/soal', soalController.addQuestion);
+app.put('/api/soal/:id', soalController.updateQuestion);
+app.delete('/api/soal/:id', soalController.deleteQuestion);
 
-module.exports = router; 
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({
+    error: 'Internal Server Error',
+    message: err.message
+  });
+});
+
+// For Vercel Serverless Functions
+module.exports = app; 
