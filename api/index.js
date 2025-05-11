@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const materiController = require('./materi');
 const soalController = require('./soal');
+const { cleanup } = require('./db');
 
 const app = express();
 
@@ -15,6 +16,18 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
+// Add cleanup middleware
+app.use(async (req, res, next) => {
+  res.on('finish', async () => {
+    try {
+      await cleanup();
+    } catch (error) {
+      console.error('Error during cleanup:', error);
+    }
+  });
+  next();
+});
 
 // Materi routes
 app.get('/api/materi', materiController.getAllMateri);
@@ -32,10 +45,11 @@ app.delete('/api/soal/:id', soalController.deleteQuestion);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
-  console.error(err.stack);
+  console.error('API Error:', err);
   res.status(500).json({
     error: 'Internal Server Error',
-    message: err.message
+    message: err.message,
+    details: process.env.NODE_ENV === 'development' ? err.stack : undefined
   });
 });
 
