@@ -37,4 +37,9 @@ dist/
 out/
 
 # Cache
-.cache/ 
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local 
